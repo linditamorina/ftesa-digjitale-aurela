@@ -47,7 +47,7 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
             <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
               {/* DESKTOP */}
               <img
-                src="/envelope-bg.png"
+                src="/envelope-bg.jpeg"
                 alt="Zarfi"
                 className="hidden md:block absolute inset-0 w-full h-full object-cover object-center"
               />
@@ -55,7 +55,7 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
               {/* MOBILE */}
               {windowDimensions.width > 0 && (
                 <div
-                  className="md:hidden absolute top-90 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90"
+                  className="md:hidden absolute top-120 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90"
                   style={{
                     // width: `${windowDimensions.height}px`,
                     width: `250%`,
@@ -63,7 +63,7 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
                   }}
                 >
                   <img
-                    src="/envelope-bg.png"
+                    src="/envelope-bg.jpeg"
                     alt="Zarfi Mobile"
                     className="w-full h-full object-cover object-center"
                   />
@@ -73,7 +73,7 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
 
             {/* VULA E DYLLIT */}
             <motion.div
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[-30px] ml-[-40px] md:mt-45 z-10 flex items-center justify-center w-72 h-72 md:w-50 md:h-50"
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[30px] ml-[-30px] md:mt-45 z-10 flex items-center justify-center w-72 h-72 md:w-50 md:h-50"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               // Vula "thyhet" (zhduket më shpejt se zarfi) për t'i dhënë rrugë hapjes
@@ -92,11 +92,11 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
 
             {/* Teksti Informues */}
             <motion.div
-              className="absolute inset-0 flex flex-col items-center justify-end pb-20 pointer-events-none"
+              className="absolute inset-0 flex flex-col items-center justify-end pb-25 pointer-events-none"
               animate={{ opacity: isOpening ? 0 : 1 }}
               transition={{ duration: 0.2 }}
             >
-              <p className="text-[#8c7377] text-[10px] md:text-xs font-serif font-medium tracking-[0.3em] uppercase mix-blend-color-burn">
+              <p className="text-[#776568] text-[14px] md:text-xs font-serif font-medium tracking-[0.3em] uppercase mix-blend-color-burn">
                 Kliko për të hapur
               </p>
             </motion.div>
