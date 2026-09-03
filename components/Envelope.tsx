@@ -55,9 +55,10 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
               {/* MOBILE */}
               {windowDimensions.width > 0 && (
                 <div
-                  className="md:hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90"
+                  className="md:hidden absolute top-90 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90"
                   style={{
-                    width: `${windowDimensions.height}px`,
+                    // width: `${windowDimensions.height}px`,
+                    width: `250%`,
                     height: `${windowDimensions.width}px`,
                   }}
                 >
@@ -72,7 +73,7 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
 
             {/* VULA E DYLLIT */}
             <motion.div
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:mt-45 z-10 flex items-center justify-center w-52 h-52 md:w-50 md:h-50"
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[-30px] ml-[-40px] md:mt-45 z-10 flex items-center justify-center w-72 h-72 md:w-50 md:h-50"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               // Vula "thyhet" (zhduket më shpejt se zarfi) për t'i dhënë rrugë hapjes
