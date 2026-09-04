@@ -306,11 +306,16 @@ export default function InvitationCard({ onOpenRsvp }: InvitationProps) {
               <p>JU FTOJMË ME ZEMËR TË FESTONI ME NE FILLIMIN E JETËS SONË SË BASHKU</p>
           </div>
 
-          <h1 className="text-6xl md:text-7xl text-[#746063] my-6 font-script leading-tight drop-shadow-sm">
+          {/* <h1 className="text-6xl md:text-7xl text-[#746063] my-4 font-script leading-tight drop-shadow-sm">
             Rrezon <br /> 
             <span className="text-4xl md:text-5xl opacity-80">&</span> <br /> 
             Aurela
-          </h1>
+          </h1> */}
+            <h1 className="text-6xl md:text-7xl text-[#746063] my-6 font-script flex flex-col items-center drop-shadow-sm -space-y-1 md:-space-y-4">
+                <span>Rrezon</span>
+                <span className="text-4xl md:text-5xl opacity-80">&</span>
+                <span>Aurela</span>
+            </h1>
 
           <div className="text-[#746063] text-[11px] md:text-sm tracking-[0.1em] leading-relaxed space-y-4 mb-4 font-light px-4">
               <p>6 TETOR 2026 | NË 19:00</p>
