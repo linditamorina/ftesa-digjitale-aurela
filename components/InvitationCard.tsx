@@ -227,7 +227,7 @@ export default function InvitationCard({ onOpenRsvp }: InvitationProps) {
 
   return (
     <motion.div 
-      className="relative h-[100dvh] w-full overflow-y-auto snap-y snap-mandatory bg-[#eec1be] scroll-smooth"
+      className="relative h-[100dvh] w-full overflow-y-auto snap-y snap-mandatory bg-[#ebd9d0] scroll-smooth"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
@@ -235,10 +235,10 @@ export default function InvitationCard({ onOpenRsvp }: InvitationProps) {
       {/* ================================
           FAQJA 1: KOPERTINA E RE (Ekuilibri i Artë)
       ================================= */}
-      <section className="relative w-full h-[100dvh] snap-start shrink-0 flex flex-col items-center justify-center bg-[#f3dedc] overflow-hidden">
+      <section className="relative w-full h-[100dvh] snap-start shrink-0 flex flex-col items-center justify-center bg-[#ebd9d0] overflow-hidden">
         
         {/* KORNIZA FLORALE: Proporcionale me gjerësinë e ekranit */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-750 max-w-[1000px] aspect-square flex items-center justify-center pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-550 max-w-[900px] aspect-square flex items-center justify-center pointer-events-none">
           <img 
             src="/rra.png" 
             alt="Dekorimi Floral" 
