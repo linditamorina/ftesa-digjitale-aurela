@@ -21,10 +21,9 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
   }, []);
 
   const handleInteraction = () => {
-    if (isOpening) return; // Parandalon klikimet e dyfishta
+    if (isOpening) return;
     setIsOpening(true);
     
-    // Zvogëlojmë kohën në 800ms për t'u përputhur me ritmin më të shpejtë të animacionit të ri
     setTimeout(() => {
       onOpen();
     }, 800);
@@ -35,16 +34,16 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
       {!isOpening && (
         <motion.div
           className="fixed inset-0 z-50 overflow-hidden bg-[#fdfaf9] m-0 p-0 origin-center"
-          // Animacioni kryesor: Kur ikën, zmadhohet dhe zbehet drejt përdoruesit
           exit={{ opacity: 0, scale: 1.2, filter: "blur(4px)" }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         >
           <div
             onClick={handleInteraction}
-            className="relative w-screen h-screen cursor-pointer bg-[#f0deed]"
+            className="relative w-full h-[100dvh] cursor-pointer bg-[#f0deed]"
           >
             {/* Prapavija e Zarfit */}
             <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
+              
               {/* DESKTOP */}
               <img
                 src="/envelope-bg.jpeg"
@@ -52,20 +51,20 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
                 className="hidden md:block absolute inset-0 w-full h-full object-cover object-center"
               />
 
-              {/* MOBILE */}
+              {/* MOBILE - Rregulluar proporcioni për të hequr zoom-in ekstrem */}
               {windowDimensions.width > 0 && (
                 <div
-                  className="md:hidden absolute top-120 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90"
+                  className="md:hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90"
                   style={{
-                    // width: `${windowDimensions.height}px`,
-                    width: `250%`,
+                    width: `${windowDimensions.height}px`,
                     height: `${windowDimensions.width}px`,
                   }}
                 >
                   <img
                     src="/envelope-bg.jpeg"
                     alt="Zarfi Mobile"
-                    className="w-full h-full object-cover object-center"
+                    // scale-105 largon vijat e bardha pa e tepruar me zoom-in
+                    className="w-full h-full object-cover object-center scale-105" 
                   />
                 </div>
               )}
@@ -73,10 +72,9 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
 
             {/* VULA E DYLLIT */}
             <motion.div
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-7.5 -ml-7.5 md:mt-45 z-10 flex items-center justify-center w-65 h-65 md:w-50 md:h-50"
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-8 -ml-8 md:mt-45 z-10 flex items-center justify-center w-56 h-56 md:w-50 md:h-50"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              // Vula "thyhet" (zhduket më shpejt se zarfi) për t'i dhënë rrugë hapjes
               animate={{
                 scale: isOpening ? 0 : 1,
                 opacity: isOpening ? 0 : 1,
@@ -92,11 +90,11 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
 
             {/* Teksti Informues */}
             <motion.div
-              className="absolute inset-0 flex flex-col items-center justify-end pb-25 pointer-events-none"
+              className="absolute inset-0 flex flex-col items-center justify-end pb-34 pointer-events-none"
               animate={{ opacity: isOpening ? 0 : 1 }}
               transition={{ duration: 0.2 }}
             >
-              <p className="text-[#776568] text-[14px] md:text-xs font-serif font-medium tracking-[0.3em] uppercase mix-blend-color-burn">
+              <p className="text-[#493236] text-[14px] md:text-xs font-serif font-medium tracking-[0.3em] uppercase mix-blend-color-burn">
                 Kliko për të hapur
               </p>
             </motion.div>
