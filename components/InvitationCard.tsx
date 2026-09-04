@@ -56,16 +56,18 @@ export default function InvitationCard({ onOpenRsvp }: InvitationProps) {
       {/* SHTRESA 2: Përmbajtja e tekstit e qendërzuar mbi prapavijë */}
       <div className="relative z-10 flex flex-col items-center text-center px-8 md:px-12 py-16 w-full max-w-lg mx-auto h-full justify-center">
         
-        <div className="text-[#746063] text-[13px] md:text-base leading-relaxed space-y-6 mb-3 mt-12 font-light px-4">
+        <div className="text-[#746063] text-[13px] md:text-base leading-relaxed space-y-6 mb-1 mt-20 font-light px-4">
             <p>NGA NJË TAKIM I BUKUR, NË NJË HISTORI DASHURIE PËRJETË</p>
             <p>JU FTOJMË ME ZEMËR TË FESTONI ME NE FILLIMIN E JETËS SONË SË BASHKU</p>
         </div>
 
-        <h1 className="text-4xl md:text-5xl text-[#746063] mb-5 mt-10 font-medium italic">
-          Rrezon <br /> & <br /> Aurela
+        <h1 className="text-7xl md:text-6xl text-[#746063] mb-3 mt-7 font-script leading-tight drop-shadow-sm">
+          Rrezon <br /> 
+          <span className="text-5xl md:text-4xl opacity-80">&</span> <br /> 
+          Aurela
         </h1>
 
-        <div className="text-[#746063] text-[13px] md:text-base leading-relaxed space-y-6 mb-3 mt-12 font-light px-4">
+        <div className="text-[#746063] text-[13px] md:text-base leading-relaxed space-y-6 mb-3 mt-2 font-light px-4">
             <p>6 TETOR 2026 | NË 19:00</p>
             <p>CITY GRILL | VUSHTRRI</p>
             <p>PRITJA E MUSAFIRËVE 18:00 - 18:30</p>
