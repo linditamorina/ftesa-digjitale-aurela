@@ -56,30 +56,27 @@ export default function InvitationCard({ onOpenRsvp }: InvitationProps) {
       {/* SHTRESA 2: Përmbajtja e tekstit e qendërzuar mbi prapavijë */}
       <div className="relative z-10 flex flex-col items-center text-center px-8 md:px-12 py-16 w-full max-w-lg mx-auto h-full justify-center">
         
-        <div className="text-[#a7999b] text-[13px] md:text-base leading-relaxed space-y-6 mb-3 mt-12 font-light px-4">
+        <div className="text-[#746063] text-[13px] md:text-base leading-relaxed space-y-6 mb-3 mt-12 font-light px-4">
             <p>NGA NJË TAKIM I BUKUR, NË NJË HISTORI DASHURIE PËRJETË</p>
             <p>JU FTOJMË ME ZEMËR TË FESTONI ME NE FILLIMIN E JETËS SONË SË BASHKU</p>
         </div>
 
-        <h1 className="text-4xl md:text-5xl text-[#b8979c] mb-5 mt-10 font-medium italic">
+        <h1 className="text-4xl md:text-5xl text-[#746063] mb-5 mt-10 font-medium italic">
           Rrezon <br /> & <br /> Aurela
         </h1>
 
-        <div className="text-[#a7999b] text-[13px] md:text-base leading-relaxed space-y-6 mb-3 mt-12 font-light px-4">
+        <div className="text-[#746063] text-[13px] md:text-base leading-relaxed space-y-6 mb-3 mt-12 font-light px-4">
             <p>6 TETOR 2026 | NË 19:00</p>
             <p>CITY GRILL | VUSHTRRI</p>
             <p>PRITJA E MUSAFIRËVE 18:00 - 18:30</p>
-        </div>
-        <div className="text-[#a7999b] text-[13px] md:text-base leading-relaxed space-y-6 mb-3 mt-12 font-light px-4">
-            <p>Me respekt, familja Dushi</p>
         </div>
 
         <button 
           onClick={onOpenRsvp}
           className="flex flex-col items-center group cursor-pointer bg-white/60 px-10 py-5 rounded-xl backdrop-blur-md border border-[#e8d5d8] shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:bg-white/80 transition-all mt-4"
         >
-          <span className="text-[9px] tracking-[0.3em] text-[#a87c82] mb-2 font-semibold">KLIKO KËTU</span>
-          <span className="text-xs tracking-[0.15em] text-[#c17a86] font-medium border-b border-[#c17a86] pb-1 group-hover:opacity-70 transition-opacity">
+          <span className="text-[9px] tracking-[0.3em] text-[#746063] mb-2 font-semibold">KLIKO KËTU</span>
+          <span className="text-xs tracking-[0.15em] text-[#746063] font-medium border-b border-[#c17a86] pb-1 group-hover:opacity-70 transition-opacity">
             KONFIRMO PJESËMARRJEN
           </span>
         </button>

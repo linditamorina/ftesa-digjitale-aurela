@@ -73,7 +73,7 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
 
             {/* VULA E DYLLIT */}
             <motion.div
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[30px] ml-[-30px] md:mt-45 z-10 flex items-center justify-center w-72 h-72 md:w-50 md:h-50"
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-7.5 -ml-7.5 md:mt-45 z-10 flex items-center justify-center w-65 h-65 md:w-50 md:h-50"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               // Vula "thyhet" (zhduket më shpejt se zarfi) për t'i dhënë rrugë hapjes
