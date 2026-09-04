@@ -240,7 +240,7 @@ export default function InvitationCard({ onOpenRsvp }: InvitationProps) {
         {/* KORNIZA FLORALE: Proporcionale me gjerësinë e ekranit */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-550 max-w-[900px] aspect-square flex items-center justify-center pointer-events-none">
           <img 
-            src="/rra.png" 
+            src="/rrra.jpeg" 
             alt="Dekorimi Floral" 
             // scale-[1.15] i pozicionon lulet saktësisht në qoshet e qendrës, pa bërë "zoom" të shëmtuar vertikal
             className="w-full h-full object-contain scale-[1.15] opacity-95 mix-blend-multiply"
