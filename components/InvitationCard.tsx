@@ -255,7 +255,7 @@ export default function InvitationCard({ onOpenRsvp }: InvitationProps) {
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.5 }}
         >
           <h2 className="text-5xl md:text-6xl text-[#746063] font-script leading-none drop-shadow-sm flex flex-col items-center">
-            <span>R</span>
+            <span>RR</span>
             <span className="text-2xl md:text-3xl opacity-70 my-2">&</span>
             <span>A</span>
           </h2>
@@ -318,7 +318,7 @@ export default function InvitationCard({ onOpenRsvp }: InvitationProps) {
             </h1>
 
           <div className="text-[#746063] text-[11px] md:text-sm tracking-[0.1em] leading-relaxed space-y-4 mb-4 font-light px-4">
-              <p>6 TETOR 2026 | NË 19:00</p>
+              <p>6 TETOR 2026</p>
               <p>CITY GRILL | VUSHTRRI</p>
               <p className="text-[9px] md:text-xs mt-2 font-medium tracking-[0.15em]">PRITJA E MYSAFIRËVE 18:00 - 18:30</p>
           </div>
