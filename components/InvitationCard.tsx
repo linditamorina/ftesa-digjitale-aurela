@@ -238,7 +238,7 @@ export default function InvitationCard({ onOpenRsvp }: InvitationProps) {
       <section className="relative w-full h-[100dvh] snap-start shrink-0 flex flex-col items-center justify-center bg-[#E8DED6] overflow-hidden">
         
         {/* KORNIZA FLORALE: Proporcionale me gjerësinë e ekranit */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-550 max-w-[900px] aspect-square flex items-center justify-center pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 max-w-[900px] aspect-square flex items-center justify-center pointer-events-none">
           <img 
             src="/arr.png" 
             alt="Dekorimi Floral" 
