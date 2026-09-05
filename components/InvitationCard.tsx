@@ -255,7 +255,7 @@ export default function InvitationCard({ onOpenRsvp }: InvitationProps) {
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.5 }}
         >
           <h2 className="text-5xl md:text-6xl text-[#746063] font-script leading-none drop-shadow-sm flex flex-col items-center">
-            <span>RR</span>
+            <span>Rr</span>
             <span className="text-2xl md:text-3xl opacity-70 my-2">&</span>
             <span>A</span>
           </h2>
